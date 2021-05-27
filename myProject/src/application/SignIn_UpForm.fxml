@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="quizProgramAnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b92d6#2b92d6;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignIn_UpFormController">
+   <children>
+      <HBox layoutX="30.0" layoutY="94.0" style="-fx-border-width: 2; -fx-border-color: #f7f3f2;" AnchorPane.bottomAnchor="239.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="94.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#loginpaneShow" prefHeight="45.0" prefWidth="220.0" text="Login">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="30.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#signuppaneShow" prefHeight="45.0" prefWidth="220.0" text="Sign Up">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="20.0" />
+         </padding>
+      </HBox>
+      <ImageView fitHeight="103.0" fitWidth="189.0" layoutX="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../start.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="loginAnchorPane" layoutY="154.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="222.0" layoutY="66.0" prefWidth="300.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="220.0" layoutY="116.0" prefWidth="300.0" />
+            <Label layoutX="94.0" layoutY="70.0" text="Username :" textFill="#fcf7f6">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="120.0" text="Password :" textFill="#f5f0f0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="loginButton" alignment="CENTER" layoutX="462.0" layoutY="173.0" mnemonicParsing="false" onAction="#handleLoginButtonPressed" prefHeight="25.0" prefWidth="50.0" text="Login" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="457.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="185.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="signUpAnchorPane" layoutX="193.0" layoutY="200.0" prefHeight="400.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="170.0">
+         <children>
+            <TextField fx:id="registerUsernameTextField" layoutX="221.0" layoutY="52.0" prefWidth="300.0" />
+            <TextField fx:id="registerPasswordTextFiel" layoutX="220.0" layoutY="103.0" prefWidth="300.0" />
+            <TextField fx:id="confirmPasswordTextField" layoutX="220.0" layoutY="148.0" prefWidth="300.0" />
+            <Label layoutX="79.0" layoutY="56.0" text="Username :" textFill="#f5eeee">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="80.0" layoutY="107.0" text="Password :" textFill="#fffefe">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="52.0" layoutY="152.0" text="Confirm password :" textFill="#fcfafa">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="signupButton" contentDisplay="CENTER" layoutX="448.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleSignupButtonPressed" prefHeight="25.0" prefWidth="50.0" text="SignUp" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="457.0" AnchorPane.rightAnchor="10.0">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

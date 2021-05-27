@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="tabAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b92d6 #2b92d#2b92d6#2b92d6 #2b92d#2b92d6;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuestionTablesFormController">
+	<children>
+		<TabPane fx:id="questionTableTabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2b92d6 #2b92d#2b92d6 #2b92d6 #2b92d#2b92d6;" tabClosingPolicy="UNAVAILABLE">
+			<tabs>
+				<Tab fx:id="softwareEngineeringTab" closable="false" onSelectionChanged="#softwareEngineeringTabSelection" text="Software Engineering">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="softwareEngineeringTable" layoutY="-2.0" prefHeight="370.0" prefWidth="606.0">
+									<columns>
+										<TableColumn fx:id="softwareColumn" prefWidth="500.0" text="Die Fragen " />
+                              <TableColumn fx:id="deleteColumnSWE" prefWidth="90.0" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="objectOrientedProgrammingTab" closable="false" onSelectionChanged="#objectOrientedProgrammingTabSelection" text="Object Oriented Programming">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="ObjectOrientedProgrammingTable" prefHeight="367.0" prefWidth="600.0">
+									<columns>
+										<TableColumn fx:id="objectOrientedProgrammingColumn" prefWidth="500.0" text="Die Fragen " />
+                              <TableColumn fx:id="deleteColumnOOP" prefWidth="90.0" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+				<Tab fx:id="javaTab" closable="false" onSelectionChanged="#javaTabSelection" text="Java">
+					<content>
+						<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+							<children>
+								<TableView fx:id="javaTable" layoutY="-2.0" prefHeight="369.0" prefWidth="600.0">
+									<columns>
+										<TableColumn fx:id="javaColumn" prefWidth="500.0" text="Die Fragen " />
+                              <TableColumn fx:id="deleteColumnJAVA" prefWidth="90.0" />
+									</columns>
+								</TableView>
+							</children>
+						</AnchorPane>
+					</content>
+				</Tab>
+			</tabs>
+		</TabPane>
+	</children>
+</AnchorPane>

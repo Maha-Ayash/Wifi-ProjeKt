@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Thu May 27 16:31:46 CEST 2021:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0179-ae3d-09fc-000006c1d240 
+on database directory /Users/maha/eclipse-workspace/myProject/projectJPA with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@1b0375b3 
+Loaded from file:/Users/maha/Libraries/db-derby-10.15.2.0-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=15.0.1+9-18
+user.dir=/Users/maha/eclipse-workspace/myProject
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.15.7
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
